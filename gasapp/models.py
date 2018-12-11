@@ -10,7 +10,7 @@ from django.utils import timezone
 
 class Brands(models.Model):
     name = models.CharField(max_length=255, null=False, unique=True)
-    active = models.BooleanField(True)
+    active = models.BooleanField(default=True)
 
     def __str__(self):
         return "{} - {}".format(self.name,self.active)
