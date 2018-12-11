@@ -58,14 +58,14 @@ class FuelPrices(models.Model):
     def __str__(self):
         return "{} - {} - {} - {} - {} - {}".format(self.price, self.station, self.fuel_type, self.date_added)
 
-
-# User Model
-# Stores Usename and Password
-# Fuel ID, Fuel type
-
-class Users(models.Model):
-    email = models.CharField(max_length=255, null=False)
-    password = models.CharField(max_length=255, null=False)
-
-    def __str__(self):
-        return "{} - {}".format(self.email, self.password)
+#
+# # User Model
+# # Stores Usename and Password
+# # Fuel ID, Fuel type
+#
+# class Users(models.Model):
+#     email = models.CharField(max_length=255, null=False)
+#     password = models.CharField(max_length=255, null=False)
+#
+#     def __str__(self):
+#         return "{} - {}".format(self.email, self.password)
