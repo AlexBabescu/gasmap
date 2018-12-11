@@ -14,6 +14,9 @@ class Brands(models.Model):
     def __str__(self):
         return self.name
 
+    class Meta:
+        verbose_name_plural = "brands"
+
 
 # Station Model
 # Stores various information of the station
@@ -33,6 +36,9 @@ class Stations(models.Model):
         return "{} - {} - {} - {} - {} - {} - {}".format(self.name, self.brand, self.address,
                                                          self.phone_number, self.lat, self.lng, self.active)
 
+    class Meta:
+        verbose_name_plural = "stations"
+
 
 # Fuel type Model
 # Records various types of fuels
@@ -43,6 +49,9 @@ class FuelTypes(models.Model):
 
     def __str__(self):
         return self.type
+
+    class Meta:
+        verbose_name_plural = "fuel types"
 
 # Fuel price Model
 # Records various types of fuels
@@ -57,6 +66,9 @@ class FuelPrices(models.Model):
 
     def __str__(self):
         return "{} - {} - {} - {} - {} - {}".format(self.price, self.station, self.fuel_type, self.date_added)
+
+    class Meta:
+        verbose_name_plural = "fuel prices"
 
 #
 # # User Model

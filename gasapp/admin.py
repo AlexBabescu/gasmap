@@ -1,3 +1,8 @@
 from django.contrib import admin
 
-# Register your models here.
+from .models import Brands, Stations, FuelTypes, FuelPrices
+
+admin.site.register(Brands)
+admin.site.register(Stations)
+admin.site.register(FuelTypes)
+admin.site.register(FuelPrices)
